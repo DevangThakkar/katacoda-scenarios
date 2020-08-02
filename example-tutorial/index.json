@@ -1,12 +1,12 @@
 {
-  "title": "Tutorial",
-  "description": "Trying to create a tutorial for CC",
+  "title": "Dockerizing Your Code",
+  "description": "Introduction to dockerizing code for your Module",
   "difficulty": "Beginner",
   "time": "60 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Creating a git repo",
         "text": "step1.md"
       },
       {
@@ -34,7 +34,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal"
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mCreating Pipelines with CloudConductor.\u001b[m\r\n"
   },
   "backend": {
     "imageid": "python:3.6"
