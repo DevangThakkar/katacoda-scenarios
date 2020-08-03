@@ -10,3 +10,13 @@ First, we shall clone the CloudConductor git repo from Github using the followin
 
 `git clone https://github.com/labdave/CloudConductor.git
 cd CloudConductor`{{execute}}
+
+A module has four essential functions:
+
+* `__init__()`
+
+* `define_input()`
+
+* `define output()`
+
+* `define_command()`
