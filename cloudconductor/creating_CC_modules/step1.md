@@ -1,10 +1,12 @@
-The first step towards making your pipeline/module is having the code dockerized. Dockerizing your code allows you to
+Modules are an integral part of the CloudConductor platform. Modules are the building blocks of pipelines in CloudConductor. There are three types of modules in CloudConductor:
 
-* create an API in order to interact with your code
-* make changes to your code with minimal or no changes to your module
-* implement version control
+* Tool/Module - represents a tool that can have one or multiple functions, represented as submodules
 
-If you're following along on your own, make sure you have pushed the requisite files to a git repo before you proceed to the next step. The idea here is that the Docker container should be able to access the files from a remote location on the web - a git repo is the ideal solution for this.
+* Splitter - represents a tool that splits one input data entity into multiple chunks of data of the same type
 
-If you're simply following along with this tutorial, you're all set. For this tutorial, we shall be using a set of scripts present [here](https://github.com/DevangThakkar/dockerized_scripts/tree/master/example_scripts).
+* Merger - represents a tool that merges chunks of data of the same type, into one output data entity
 
+First, we shall clone the CloudConductor git repo from Github using the following command
+
+`git clone https://github.com/labdave/CloudConductor.git
+cd CloudConductor`{{execute}}
