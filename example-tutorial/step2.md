@@ -2,7 +2,8 @@ Docker can build images automatically by reading the instructions from a Dockerf
 
 In this step, we shall create a Dockerfile. The first step is to choose a base layer - for most cases, a base Linux image should work. 
 
-<pre class="file" data-filename="Dockerfile" data-target="replace"># work from latest LTS ubuntu release<br>FROM ubuntu:18.04
+<pre class="file" data-filename="Dockerfile" data-target="replace"># work from latest LTS ubuntu release
+FROM ubuntu:18.04
 </pre>
 
 An example of when you would need to use a different 
