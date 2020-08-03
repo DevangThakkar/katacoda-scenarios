@@ -29,8 +29,7 @@
     ],
     "assets": {
       "host01": [
-        {"file": "wait.sh", "target": "/home", "chmod": "+x"},
-        {"file": "deploy.sh", "target": "/home", "chmod": "+x"}
+        {"file": "Dockerfile", "target": "/home"}
       ]
     },
     "intro": {
@@ -49,5 +48,5 @@
   "backend": {
     "imageid": "python:3.6"
   },
-  "files": ["/home/wait.sh", "/home/deploy.sh"]
+  "files": ["/home/Dockerfile"]
 }
