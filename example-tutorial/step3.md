@@ -21,7 +21,7 @@ We can build a Docker image from the Dockerfile using the following command:
 
 The `-t` flag takes in the image name which is of the form 
 
-`$CONTAINER_REGISTRY/$IMAGE:$TAG`
+`$CONTAINER_REGISTRY/$IMAGE:$TAG`{{copy}}
 
 We shall talk more about the container registry in Step 5. 
 

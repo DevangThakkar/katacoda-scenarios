@@ -44,7 +44,7 @@ RUN pip3 install argparse
 
 In the Step 1, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`.
 
-`git clone https://github.com/<USER>/<REPO>.git`
+`git clone https://github.com/<USER>/<REPO>.git`{{copy}}
 
 It is crucial to be noted that while updating an image, Docker only executes commands where the command or the output of the command has changed. Since changes to the git repo are not reflected in the result of a successful clone response status, Docker has no way of knowing if the git repo has changed. An easy way out is to query the last commit made to the repo and store it. This way, Docker will clone the directory if it has had any commits since the previous build.
 
