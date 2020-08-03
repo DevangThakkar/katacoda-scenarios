@@ -11,7 +11,7 @@
         "code": "setup.sh"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Creating a Dockerfile",
         "text": "step2.md"
       },
       {
