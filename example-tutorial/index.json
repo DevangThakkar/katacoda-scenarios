@@ -27,11 +27,6 @@
         "text": "step5.md"
       }
     ],
-    // "assets": {
-    //   "host01": [
-    //     {"file": "Dockerfile", "target": "/home"}
-    //   ]
-    // },
     "intro": {
       "text": "intro.md",
       "credits": "Devang Thakkar"
