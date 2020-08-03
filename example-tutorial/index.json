@@ -48,5 +48,5 @@
   "backend": {
     "imageid": "python:3.6"
   },
-  "files": ["wait.sh", "deploy.sh"]
+  "files": ["/home/wait.sh", "/home/deploy.sh"]
 }
