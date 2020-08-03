@@ -8,8 +8,7 @@ Modules are an integral part of the CloudConductor platform. Modules are the bui
 
 First, we shall clone the CloudConductor git repo from Github using the following command
 
-`git clone https://github.com/labdave/CloudConductor.git
-cd CloudConductor`{{execute}}
+`git clone https://github.com/labdave/CloudConductor.git`{{execute}}
 
 A module has four essential functions:
 
