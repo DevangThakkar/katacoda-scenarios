@@ -43,5 +43,5 @@
   "backend": {
     "imageid": "python:3.6"
   },
-  "files": ["/home/Dockerfile"]
+  "files": ["Dockerfile"]
 }
