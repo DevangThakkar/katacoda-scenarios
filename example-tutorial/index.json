@@ -35,7 +35,8 @@
     "intro": {
       "text": "intro.md",
       "credits": "Devang Thakkar",
-      "courseData": "env-init.sh"
+      "courseData": "env-init.sh",
+      "code": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
