@@ -1,1 +1,1 @@
-Welcome to Part 1 of the Pipeline Creation with CloudConductor Tutorial! This tutorial will give you a hands-on experience with dockerizing your code.
+Welcome to Part 2 of the Developing for CloudConductor Tutorial! This tutorial will give you a hands-on experience with creating a CloudConductor module.
