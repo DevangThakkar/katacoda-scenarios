@@ -17,7 +17,13 @@ If Docker is correctly installed, you will see output of the sort
 
 We can build a Docker image from the Dockerfile using the following command:
 
-`docker build -t example_docker:1.0 .`{{execute}}
+`docker build -t davelabhub/example_docker:1.0 .`{{execute}}
+
+The `-t` flag takes in the image name which is of the form 
+
+`$CONTAINER_REGISTRY/$IMAGE:$TAG`
+
+We shall talk more about the container registry in Step 5. 
 
 Building a Docker image for the first time takes a while but future re-builds are much faster due to caching of unchanged layers.
 
@@ -25,6 +31,6 @@ To see confirm that our iamge was successfully built, we can look at the list of
 
 `docker images`{{execute}}
 
-You should be able to see the REPOSITORY example_docker with the TAG 1.0 at the top of the list.
+You should be able to see the REPOSITORY `davelabhub/example_docker` with the TAG `1.0` at the top of the list.
 
 Congratulations! You have now built your Docker image.

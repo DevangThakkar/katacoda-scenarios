@@ -1,10 +1,10 @@
 Having built a Docker image in Step 3, we shall now proceed to test if our Docker runs as expected. Check if the docker image exists with the command `docker images`{{execute}}
 
-You should be able to see the REPOSITORY example_docker with the TAG 1.0 at the top of the list.
+You should be able to see the REPOSITORY `davelabhub/example_docker` with the TAG `1.0` at the top of the list.
 
 In order to run our docker image, we can use multiple commands. One way is to use `docker run`
 
-`docker run --rm --user root -v "${PWD}:/data" example_docker:1.0 /bin/bash -c "python3 script.py"`{{execute}}
+`docker run --rm --user root -v "${PWD}:/data" davelabhub/example_docker:1.0 /bin/bash -c "python3 script.py"`{{execute}}
 
 Here, 
 
@@ -17,6 +17,6 @@ Here,
 
 This is the ideal way to confirm if the docker container runs as expected. However, sometimes, we may need to look inside the docker for debugging purposes. In order to do so, we can run the docker container in an interactive fashion.
 
-`docker run -it example_docker:1.0`{{execute}}
+`docker run -it davelabhub/example_docker:1.0`{{execute}}
 
 We are now inside the docker container! There are other ways to access a docker container, but these two methods should be enough for scope of this course. 
