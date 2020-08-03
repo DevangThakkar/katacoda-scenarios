@@ -8,7 +8,7 @@
       {
         "title": "Step 1 - Creating a GitHub repo",
         "text": "step1.md",
-        "code": "setup.sh"
+        "courseData": "env-init.sh"
       },
       {
         "title": "Step 2",
