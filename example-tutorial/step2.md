@@ -21,8 +21,6 @@ LABEL maintainer="lab.dave@gmail.com"
 </pre>
 
 The default base image you start from is usually rather bare-bones, so the next step is to install some basic required packages. You may need to install more packages based on the requirements of your scripts.
-
-Next, we fill in the metadata information:
 <pre class="file" data-filename="Dockerfile" data-target="append"># update the OS related packages
 RUN apt-get update -y && apt-get install -y \
     build-essential \
@@ -44,7 +42,7 @@ You can use the `RUN` prefix to install any other dependencies that your code mi
 RUN pip3 install argparse
 </pre>
 
-In the previous step, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`.
+In the Step 1, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`.
 
 `git clone https://github.com/<USER>/<REPO>.git`
 
@@ -55,3 +53,5 @@ ADD https://github.com/devangthakkar/dockerized_scripts/example_scripts/git/ref/
 RUN git clone https://github.com/devangthakkar/dockerized_scripts/example_scripts.git /example_scripts
 ENV PATH="/example_scripts:$PATH"
 </pre>
+
+Your Dockerfile is now ready! Ensure that the file has no extensions, i.e. the file is named simply `Dockerfile`.
