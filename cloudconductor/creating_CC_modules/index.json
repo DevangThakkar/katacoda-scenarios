@@ -1,0 +1,47 @@
+{
+  "title": "Creating a CloudConductor Module",
+  "description": "A Tutorial on creating your own CloudConductor Module",
+  "difficulty": "Intermediate",
+  "time": "60 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Creating a GitHub repo",
+        "text": "step1.md",
+        "code": "setup.sh"
+      },
+      {
+        "title": "Step 2 - Creating a Dockerfile",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Building a Docker image",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Running a Docker container",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Pushing to a container registry",
+        "text": "step5.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "Devang Thakkar"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "hideHiddenFiles": true,
+    "uieditorpath": "/home",
+    "uilayout": "editor-terminal"
+  },
+  "backend": {
+    "imageid": "ubuntu:1804"
+  },
+  "files": ["Dockerfile"]
+}

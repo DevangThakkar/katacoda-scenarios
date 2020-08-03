@@ -1,0 +1,17 @@
+{
+  "title": "Developing for CloudConductor",
+  "description": "Learning hwo to create modules and pipleines for CloudConductor",
+  "icon": "fa-katacoda",
+  "courses": [
+    {
+      "course_id": "dockerizing_for_CC",
+      "title": "Dockerizing Your Code",
+      "description": "A Tutorial on Dockerizing Code for your CloudConductor Module"
+    },
+    {
+      "course_id": "creating_CC_modules",
+      "title": "Creating a CloudConductor Module",
+      "description": "A Tutorial on creating your own CloudConductor Module"
+    }
+  ]
+}
