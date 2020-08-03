@@ -34,7 +34,8 @@
       ]
     },
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "credits": "Devang Thakkar"
     },
     "finish": {
       "text": "finish.md"
