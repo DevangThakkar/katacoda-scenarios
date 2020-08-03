@@ -40,5 +40,17 @@ RUN apt-get update -y && apt-get install -y \
 </pre>
 
 You can use the `RUN` prefix to install any other dependencies that your code might have. For example,
-<pre class="file" data-filename="Dockerfile" data-target="append">RUN pip3 install argparse
+<pre class="file" data-filename="Dockerfile" data-target="append"># install any other dependencies needed
+RUN pip3 install argparse
+</pre>
+
+In the previous step, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`.
+
+`git clone https://github.com/devangthakkar/dockerized_scripts/example_scripts.git`
+
+It is crucial to be noted that while updating an image, Docker only executes commands where the command or the output of the command has changed. Since changes to the git repo are not reflected in the result of a successful clone response status, Docker has no way of knowing if the git repo has changed. An easy way out is to query the last commit made to the repo and store it. This way, Docker will clone the directory if it has had any commits since the previous build.
+
+<pre class="file" data-filename="Dockerfile" data-target="append">#clone git repo
+ADD https://github.com/devangthakkar/dockerized_scripts/example_scripts/git/ref/heads/ version.json
+RUN git clone https://github.com/devangthakkar/dockerized_scripts/example_scripts.git
 </pre>
