@@ -31,7 +31,7 @@ RUN apt-get update -y && apt-get install -y \
     unzip \
     cmake \
     gcc-8-base \
-    git
+    git \
     python3-pip \
     gawk \
     bedtools
@@ -49,9 +49,9 @@ In the Step 1, we had ensured that our scripts were available online in a git re
 It is crucial to be noted that while updating an image, Docker only executes commands where the command or the output of the command has changed. Since changes to the git repo are not reflected in the result of a successful clone response status, Docker has no way of knowing if the git repo has changed. An easy way out is to query the last commit made to the repo and store it. This way, Docker will clone the directory if it has had any commits since the previous build.
 
 <pre class="file" data-filename="Dockerfile" data-target="append"># clone git repo
-ADD https://github.com/devangthakkar/dockerized_scripts/example_scripts/git/ref/heads/ version.json
-RUN git clone https://github.com/devangthakkar/dockerized_scripts/example_scripts.git /example_scripts
-ENV PATH="/example_scripts:$PATH"
+ADD https://api.github.com/repos/DevangThakkar/dockerized_scripts/git/refs/heads/ version.json
+RUN git clone https://github.com/devangthakkar/dockerized_scripts.git /repo
+RUN cp /repo/example_scripts/* /
 </pre>
 
 Your Dockerfile is now ready! Ensure that the file has no extensions, i.e. the file is named simply `Dockerfile`.
