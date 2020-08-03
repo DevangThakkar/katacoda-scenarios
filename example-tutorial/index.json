@@ -41,7 +41,7 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "python:3.6"
+    "imageid": "ubuntu:1804"
   },
   "files": ["Dockerfile"]
 }
