@@ -8,9 +8,7 @@ FROM ubuntu:18.04
 
 You may need to use a different base image depending on your requirements. Suppose you need to have R installed for your scripts to run, instead of installing R manually, you can choose to start from an image which has R installed.
 
-<pre class="file" data-filename="Dockerfile" data-target="replace"># work from R version 3.6
-FROM r-base:3.6.0
-</pre>
+`FROM r-base:3.6.0`{{copy}}
 
 Next, we fill in the metadata information:
 <pre class="file" data-filename="Dockerfile" data-target="append"># Metadata
