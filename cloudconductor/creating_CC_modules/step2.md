@@ -1,4 +1,4 @@
-In this step, we shall describe the \_\_init\_\_() function. \_\_init\_\_ is a Python constructor that allows us to initialize the attributes of the class.
+In this step, we shall describe the `__init__()` function. `__init__` is a Python constructor that allows us to initialize the attributes of the class.
 
 As described earlier, the example script we want to modularize counts the number of lines in the header of a BAM file that is passed to it. Let us assume that we need this count in a file called `header_count.txt`.
 
@@ -11,7 +11,7 @@ class Example(Module):
         super(Example, self).__init__(module_id, is_docker)
         
         # Add output keys here if reuired
-        self.output_keys            = ["header_count"]
+        self.output_keys        = ["header_count"]
 
 </pre>
 
