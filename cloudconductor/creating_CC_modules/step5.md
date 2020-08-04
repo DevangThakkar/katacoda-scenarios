@@ -30,4 +30,4 @@ The module, depending on whether it is a `Tool`, `Merger`, or `Splitter`, belong
 
 `cp Example.py CloudConductor/Modules/Tools/`{{execute}}
 
-You can then commit the changes and push to the repo if you have psuhing privileges!
+You can then commit the changes and push to the repo if you have pushing privileges!
