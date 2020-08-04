@@ -4,7 +4,7 @@ You should be able to see the REPOSITORY `davelabhub/example_docker` with the TA
 
 In order to run our docker image, we can use multiple commands. One way is to use `docker run`
 
-`docker run --rm --user root -v "${PWD}:/data" davelabhub/example_docker:1.0 /bin/bash -c "python3 script.py"`{{execute}}
+`docker run --rm --user root -v "${PWD}:/data" davelabhub/example_docker:1.0 /bin/bash -c "bash script.sh"`{{execute}}
 
 Here, 
 

@@ -10,7 +10,7 @@ First, we shall clone the CloudConductor git repo from Github using the followin
 
 `git clone https://github.com/labdave/CloudConductor.git`{{execute}}
 
-A module has four essential functions:
+A module has four essential functions. We shall talk more about these functions in the next steps. 
 
 * `__init__()`
 
@@ -19,3 +19,7 @@ A module has four essential functions:
 * `define output()`
 
 * `define_command()`
+
+
+
+The aim of this tutorial is to create a CloudConductor Module for the script that we had dockerized in the previous tutorial. The script performs the simple task of counting the number lines in the header of a BAM file that is passed to it.

@@ -6,12 +6,12 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Creating a GitHub repo",
+        "title": "Step 1 - Introduction to CloudConductor Modules",
         "text": "step1.md",
         "code": "setup.sh"
       },
       {
-        "title": "Step 2 - Creating a Dockerfile",
+        "title": "Step 2 - Creating a Module: __init__",
         "text": "step2.md"
       },
       {
@@ -43,5 +43,5 @@
   "backend": {
     "imageid": "ubuntu:1804"
   },
-  "files": ["Dockerfile"]
+  "files": ["Example.py"]
 }
