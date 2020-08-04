@@ -24,7 +24,7 @@ When generating the command, you can use the following placeholders and CloudCon
 
 This marks the completion of the module creation!
 
-An important point to be noted is that no module development should should occur directly on the `master` branch. We can checkout a branch by using the `git  checkout <branchname>`{{copy}} command.
+An important point to be noted is that no module development should occur directly on the `master` branch. We can checkout a branch by using the `git  checkout <branchname>`{{copy}} command.
 
 The module, depending on whether it is a `Tool`, `Merger`, or `Splitter`, belongs in the respective folder in the CloudConductor repo. Since our tool is a simple Module/Tool, we can place it in the appropriate directory using the following command:
 
