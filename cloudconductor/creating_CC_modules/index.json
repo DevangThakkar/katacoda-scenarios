@@ -11,19 +11,19 @@
         "code": "setup.sh"
       },
       {
-        "title": "Step 2 - Creating a Module: __init__",
+        "title": "Step 2 - Creating a Module: __init__()",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Creating a Module: define_input",
+        "title": "Step 3 - Creating a Module: define_input()",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Creating a Module: define_output",
+        "title": "Step 4 - Creating a Module: define_output()",
         "text": "step4.md"
       },
       {
-        "title": "Step 5 - Pushing to a container registry",
+        "title": "Step 5 - Creating a Module: define_command()",
         "text": "step5.md"
       }
     ],
