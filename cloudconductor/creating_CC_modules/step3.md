@@ -1,6 +1,7 @@
 In this step, we shall describe the define\_input() function.
 
 <pre class="file" data-filename="Example.py" data-target="append">
+
 	def define_input(self):
 		# Module creator needs to define which arguments have is_resource=True
 		# Module creator needs to rename arguments as required by CC

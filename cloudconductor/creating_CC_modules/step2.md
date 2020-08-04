@@ -11,8 +11,10 @@ class Example(Module):
         super(Example, self).__init__(module_id, is_docker)
         
         # Add output keys here if reuired
-        self.output_keys            = ["header_count"]</pre>
+        self.output_keys            = ["header_count"]
 
-This snippet presents quite a few concepts that need to be explained. Here, `Example` is the name of the Module, and hence the name of the Python class. The keyword `Module` in `class Example(Module)` represents the type of tool - it can take any of `Module`, `Merger`, `Splitter` based on the use case.
+</pre>
+
+This snippet presents quite a few concepts that need to be explained. Here, `Example` is the name of the Module, and hence the name of the Python class. The keyword `Module` in `class Example(Module)` represents the type of tool - it can take any of the values `Module`, `Merger`, `Splitter` based on the type of tool.
 
 The other important part in this snippet is `output_keys`. This variable stores the outputs from the module - in our case, we expect to store the number of lines in the header of a BAM file. The link between the file and the keyword will be made in a later step.
