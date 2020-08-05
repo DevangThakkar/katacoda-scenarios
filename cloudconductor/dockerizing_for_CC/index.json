@@ -2,7 +2,7 @@
   "title": "Dockerizing Your Code",
   "description": "A Tutorial on Dockerizing Code for your CloudConductor Module",
   "difficulty": "Beginner",
-  "time": "60 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {

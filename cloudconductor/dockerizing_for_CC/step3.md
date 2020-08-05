@@ -19,7 +19,7 @@ We can build a Docker image from the Dockerfile using the following command:
 
 `docker build -t davelabhub/example_docker:1.0 .`{{execute}}
 
-The `-t` flag takes in the image name which is of the form 
+The `-t` flag takes in the image name which is of the form shown below; you will need to edit these variables for your use case.
 
 `$CONTAINER_REGISTRY/$IMAGE:$TAG`{{copy}}
 

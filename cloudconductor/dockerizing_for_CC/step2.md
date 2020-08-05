@@ -32,7 +32,8 @@ RUN apt-get update -y && apt-get install -y \
     git \
     python3-pip \
     gawk \
-    bedtools
+    bedtools \
+    samtools
 </pre>
 
 You can use the `RUN` prefix to install any other dependencies that your code might have. For example,
@@ -40,7 +41,7 @@ You can use the `RUN` prefix to install any other dependencies that your code mi
 RUN pip3 install argparse
 </pre>
 
-In the Step 1, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`.
+In the Step 1, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`. You will need to edit the clone command to point to your repository. The syntax for a `git clone` command is shown below:
 
 `git clone https://github.com/<USER>/<REPO>.git`{{copy}}
 
