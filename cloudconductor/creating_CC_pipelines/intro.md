@@ -1,1 +1,1 @@
-Welcome to Part 2 of the Developing for CloudConductor Tutorial! This tutorial will give you a hands-on experience with creating a CloudConductor module.
+Welcome to Part 3 of the Developing for CloudConductor Tutorial! This tutorial will give you a hands-on experience with creating a CloudConductor pipeline.

@@ -1,25 +1,11 @@
-Modules are an integral part of the CloudConductor platform. Modules are the building blocks of pipelines in CloudConductor. There are three types of modules in CloudConductor:
+Pipelines are the crux of the CloudConductor infrastructure. Pipelines, in essence, are a directed acyclic graph of modules. Check out an example of an active pipeline [here](https://github.com/DevangThakkar/dockerized_scripts/blob/master/example_scripts/CNV_Pipeline.svg)
 
-* Tool/Module - represents a tool that can have one or multiple functions, represented as submodules
+A module needs to be encapsulated in a pipeline in order to be run using the CloudConductor infrastructure. A pipeline can consist of one or more modules. A pipeline has certain config files that need to be provided to CloudConductor in order for it to recognize the pipeline as a valid one. These files are listed below and described in detail in the following steps.
 
-* Splitter - represents a tool that splits one input data entity into multiple chunks of data of the same type
+* `<PIPELINE_NAME>_graph_template.config`
 
-* Merger - represents a tool that merges chunks of data of the same type, into one output data entity
+* `<PIPELINE_NAME>_resource_template.config`
 
-First, we shall clone the CloudConductor git repo from Github using the following command
+* `<PIPELINE_NAME>_sample_sheet.json`
 
-`git clone https://github.com/labdave/CloudConductor.git`{{execute}}
-
-A module has four essential functions. We shall talk more about these functions in the next steps. 
-
-* `__init__()`
-
-* `define_input()`
-
-* `define output()`
-
-* `define_command()`
-
-
-
-The aim of this tutorial is to create a CloudConductor Module for the script that we had dockerized in the previous tutorial. The script performs the simple task of counting the number lines in the header of a BAM file that is passed to it.
+* `<PIPELINE_NAME>_platform_template.config`

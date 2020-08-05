@@ -43,5 +43,5 @@
   "backend": {
     "imageid": "ubuntu:1804"
   },
-  "files": ["Example_graph_template.config", "Example_resource_template.config", "Example_sample_sheet.json", "Example_platform_template.config"]
+  "files": ["EXAMPLE_graph_template.config", "EXAMPLE_resource_template.config", "EXAMPLE_sample_sheet.json", "EXAMPLE_platform_template.config"]
 }
