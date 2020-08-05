@@ -38,7 +38,7 @@ RUN apt-get update -y && apt-get install -y \
 
 You can use the `RUN` prefix to install any other dependencies that your code might have. For example,
 <pre class="file" data-filename="Dockerfile" data-target="append"># install any other dependencies needed
-RUN pip3 install argparse
+RUN pip3 install numpy
 </pre>
 
 In the Step 1, we had ensured that our scripts were available online in a git repo. Having set up our environment, we now import our scripts from the git repo using `git clone`. You will need to edit the clone command to point to your repository. The syntax for a `git clone` command is shown below:

@@ -15,7 +15,7 @@ Here,
 5. `"${PWD}:/data"` mounts the current working directory into `/data`
 6. Finally, the command is passed as an argument to the `/bin/bash` shell
 
-This is the ideal way to confirm if the docker container runs as expected. However, sometimes, we may need to look inside the docker for debugging purposes. In order to do so, we can run the docker container in an interactive fashion.
+This is the ideal way to confirm if the docker container runs as expected. However, sometimes, we may need to look inside the docker for debugging purposes. In order to do so, we can run the docker container in an interactive manner.
 
 `docker run -it davelabhub/example_docker:1.0`{{execute}}
 
