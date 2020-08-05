@@ -1,29 +1,29 @@
 {
-  "title": "Creating a CloudConductor Module",
-  "description": "A Tutorial on creating your own CloudConductor Module",
+  "title": "Creating a CloudConductor Pipeline",
+  "description": "A Tutorial on creating your own CloudConductor Pipeline",
   "difficulty": "Intermediate",
   "time": "20 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1 - Introduction to CloudConductor Modules",
+        "title": "Step 1 - Introduction to CloudConductor Pipelines",
         "text": "step1.md",
         "code": "setup.sh"
       },
       {
-        "title": "Step 2 - Creating a Module: __init__()",
+        "title": "Step 2 - Creating a Pipeline: graph_template",
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Creating a Module: define_input()",
+        "title": "Step 3 - Creating a Pipeline: resource_template",
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Creating a Module: define_output()",
+        "title": "Step 4 - Creating a Pipeline: sample_sheet",
         "text": "step4.md"
       },
       {
-        "title": "Step 5 - Creating a Module: define_command()",
+        "title": "Step 5 - Creating a Pipeline: platform_template",
         "text": "step5.md"
       }
     ],
@@ -43,5 +43,5 @@
   "backend": {
     "imageid": "ubuntu:1804"
   },
-  "files": ["Example.py"]
+  "files": ["Example_graph_template.config", "Example_resource_template.config", "Example_sample_sheet.json", "Example_platform_template.config"]
 }
