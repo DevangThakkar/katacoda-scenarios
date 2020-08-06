@@ -1,13 +1,19 @@
-In this step, we shall describe the `define_output()` function.
+In this step, we shall describe the `graph_template` file. We had linked to [this graph](https://github.com/DevangThakkar/dockerized_scripts/blob/master/example_scripts/CNV_Pipeline.svg) back in Step 1 to explain what a pipeline looks like - this file defines that graph. Since our example pipeline is going to consist only of one module, the pipeline graph will look rather simple.
 
-<pre class="file" data-filename="Example.py" data-target="append">
-
-	def define_output(self):
-		header_lines			= self.generate_unique_file_name("header_lines.txt")
-		header_chars			= self.generate_unique_file_name("header_chars.txt")
-		self.add_output("header_lines",	header_lines)
-		self.add_output("header_chars",	header_chars)
-
+<pre class="file" data-filename="EXAMPLE_graph_template.config" data-target="replace">
+[example]
+    module                      = Example
+    submodule                   = Example
+    docker_image                = example_docker
+    final_output                = header_lines, header_chars
 </pre>
 
-By this point, you should be able to figure out what this snippet is trying to do. We create files with unique names containing the term `header_lines.txt` and `header_chars.txt` and link the files to the output keys `header_lines` and `header_chars` respectively.
+Line 1 (`[example]`) defines the name of the module in the pipeline - it is standard practive to have it be the same as the module name.
+
+Line 2 (`Example`) lists the module name - this is the name of the Module file (minus the `.py`) that we created in our previous tutorial
+
+Line 3 (`Example`) lists the submodule name which for common use cases is the same as Line 2. To be precise, this is the name of the class in the Module file. This functionality is provided to group together several related submodules as different classes in the same Module file, however, you should usually be good with the `submodule` being the same as the `module`.
+
+Line 4 (`example_docker`) lists the docker image that we have created. The value here links to the resource that was defined in the previous step.
+
+Line 5 (`header_lines, header_chars`) lists the final outputs from the module. This is the same as the output keys defined in Step 2 of the previous tutorial.

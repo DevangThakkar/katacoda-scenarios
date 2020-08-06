@@ -31,7 +31,7 @@ This marks the completion of the module creation!
 
 An important point to be noted is that no module development should occur directly on the `master` branch. We can checkout a branch by using the `git  checkout <branchname>`{{copy}} command.
 
-The module, depending on whether it is a `Tool`, `Merger`, or `Splitter`, belongs in the respective folder in the CloudConductor repo. Since our tool is a simple Module/Tool, you will have to place it in the appropriate directory using the following command:
+The module, depending on whether it is a `Tool`, `Merger`, or `Splitter`, belongs in the respective folder in the [CloudConductor repo](https://github.com/labdave/CloudConductor/tree/master/Modules). Since our tool is a simple Module/Tool, you will have to place it in the appropriate directory using the following command:
 
 `cp Example.py CloudConductor/Modules/Tools/`{{execute}}
 

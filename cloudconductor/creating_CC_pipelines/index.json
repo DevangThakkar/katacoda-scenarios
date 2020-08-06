@@ -11,7 +11,7 @@
         "code": "setup.sh"
       },
       {
-        "title": "Step 2 - Creating a Pipeline: graph_template",
+        "title": "Step 2 - Creating a Pipeline: platform_template",
         "text": "step2.md"
       },
       {
@@ -19,11 +19,11 @@
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Creating a Pipeline: sample_sheet",
+        "title": "Step 4 - Creating a Pipeline: graph_template",
         "text": "step4.md"
       },
       {
-        "title": "Step 5 - Creating a Pipeline: platform_template",
+        "title": "Step 5 - Creating a Pipeline: sample_sheet",
         "text": "step5.md"
       }
     ],
@@ -43,5 +43,5 @@
   "backend": {
     "imageid": "ubuntu:1804"
   },
-  "files": ["EXAMPLE_graph_template.config", "EXAMPLE_resource_template.config", "EXAMPLE_sample_sheet.json", "EXAMPLE_platform_template.config"]
+  "files": ["EXAMPLE_platform_template.config", "EXAMPLE_graph_template.config", "EXAMPLE_resource_template.config", "EXAMPLE_sample_sheet.json"]
 }

@@ -45,7 +45,7 @@ In the Step 1, we had ensured that our scripts were available online in a git re
 
 `git clone https://github.com/<USER>/<REPO>.git`{{copy}}
 
-It is crucial to be noted that while updating an image, Docker only executes commands where the command or the output of the command has changed. Since changes to the git repo are not reflected in the result of a successful clone response status, Docker has no way of knowing if the git repo has changed. An easy way out is to query the last commit made to the repo and store it. This way, Docker will clone the directory if it has had any commits since the previous build.
+It is crucial to note that when updating an image, Docker only executes commands where the command or the output of the command has changed. Since changes to the git repo are not reflected in the result of a successful clone response status, Docker has no way of knowing if the git repo has changed. An easy way to fix this is to query the last commit made to the repo and store it. This way, Docker will clone the directory if it has had any commits since the previous build.
 
 <pre class="file" data-filename="Dockerfile" data-target="append"># clone git repo
 ADD https://api.github.com/repos/DevangThakkar/dockerized_scripts/git/refs/heads/ version.json
