@@ -1,4 +1,4 @@
-In this step, we shall describe the `graph_template` file. We had linked to [this graph](https://github.com/DevangThakkar/dockerized_scripts/blob/master/example_scripts/CNV_Pipeline.svg) back in Step 1 to explain what a pipeline looks like - this file defines that graph. Since our example pipeline is going to consist only of one module, the pipeline graph will look rather simple.
+In this step, we shall describe the `graph_template` file. Pipeline graphs can look rather complex if we have a lot of modules, but since our example pipeline is going to consist only of one module, the pipeline graph will look rather simple.
 
 <pre class="file" data-filename="EXAMPLE_graph_template.config" data-target="replace">
 [example]
