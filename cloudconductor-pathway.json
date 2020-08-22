@@ -12,6 +12,11 @@
       "course_id": "creating_CC_modules",
       "title": "Creating a CloudConductor Module",
       "description": "A Tutorial on creating your own CloudConductor Module"
+    },
+    {
+      "course_id": "creating_CC_pipelines",
+      "title": "Creating a CloudConductor Pipeline",
+      "description": "A Tutorial on creating your own CloudConductor Pipeline"
     }
   ]
 }
