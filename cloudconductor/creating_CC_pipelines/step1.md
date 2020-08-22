@@ -11,3 +11,8 @@ A module needs to be encapsulated in a pipeline in order to be run using the Clo
 * `<PIPELINE_NAME>_graph_template.config`
 
 * `<PIPELINE_NAME>_sample_sheet.json`
+
+
+First, we shall clone the `cc-config-templates` git repo from Github using the following command
+
+`git clone https://github.com/labdave/cc-config-templates.git`{{execute}}
