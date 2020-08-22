@@ -5,7 +5,7 @@ Broadly speaking, there are two types of resources: docker images and other file
 <pre class="file" data-filename="EXAMPLE_resource_template.config" data-target="replace">
 [Docker]
     [[example]]
-        image = davelabhub/example_docker:1.0
+        image 			= davelabhub/example_docker:1.0
 
 [Path]
     [[example_resource]]
