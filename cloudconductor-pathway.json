@@ -1,6 +1,6 @@
 {
   "title": "Developing for CloudConductor",
-  "description": "Learning how to create modules and pipelines for CloudConductor",
+  "description": "CloudConductor is a cloud-based workflow engine for defining and executing bioinformatics pipelines in a cloud environment. Currently, the framework has been tested extensively on the Google Cloud Platform and AWS, but will eventually support other platforms including Azure.",
   "icon": "fa-katacoda",
   "courses": [
     {
