@@ -17,3 +17,25 @@ Line 3 (`Example`) lists the submodule name which for common use cases is the sa
 Line 4 (`example_docker`) lists the docker image that we have created. The value here links to the resource that was defined in the previous step.
 
 Line 5 (`header_lines, header_chars`) lists the final outputs from the module. This is the same as the output keys defined in Step 2 of the previous tutorial.
+
+Another important feature of the graph is the linkage between modules. We can add edges between modules by specifying the `input_from` argument. We can also make input arguments take values besides their default values specified in the module. For example, if we need more memory than the default value specified in the module, we can set it here.
+
+A mock graph config file with two modules is shown below for better understanding. Note the usage of `input_from` and `[[args]]`. 
+
+`
+[example]
+    module                      = Example
+    submodule                   = Example
+    docker_image                = example_docker
+    final_output                = header_lines, header_chars
+    [[args]]
+        mem						= 10
+[second_example]
+    module                      = Example2
+    submodule                   = Example2
+    docker_image                = example2_docker
+    final_output                = header_lines, header_chars
+    input_from					= example
+`
+
+Next, we shall learn how the pipeline accesses sample-specific files in the sample sheet.
